@@ -6,7 +6,7 @@ $( "#CIKsearch" ).click(function() {
     console.log($("#CIKinput").val());
     $("#SearchHyperLink").attr("href", CIKsearcher + $("#CIKinput").val().toString());
     $("#SearchHyperLink").text(CIKsearcher + $("#CIKinput").val().toString());
-    $("#SearchIframe").attr("href", CIKsearcher + $("#CIKinput").val().toString());
+    $("#SearchIframe").attr("src", CIKsearcher + $("#CIKinput").val().toString());
 });
 $( "#TickerSearch" ).click(function() {
   console.log('Ticker Search!');
@@ -14,7 +14,7 @@ $( "#TickerSearch" ).click(function() {
     console.log($("#TickerInput").val());
     $("#SearchHyperLink").attr("href", TickerSearcher + $("#TickerInput").val().toString());
     $("#SearchHyperLink").text(TickerSearcher + $("#TickerInput").val().toString());
-    $("#SearchIframe").attr("href", TickerSearcher + $("#TickerInput").val().toString());  
+    $("#SearchIframe").attr("src", TickerSearcher + $("#TickerInput").val().toString());  
 });
 $( "#TickerSymbolSearch" ).click(function() {
   console.log('TickerSymbolSearch Search!');
